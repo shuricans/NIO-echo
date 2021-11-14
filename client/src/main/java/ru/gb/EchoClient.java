@@ -39,11 +39,6 @@ public class EchoClient {
             client.write(buffer);
 
             if ("q".equals(msg)) {
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 stop();
                 System.exit(0);
             }
